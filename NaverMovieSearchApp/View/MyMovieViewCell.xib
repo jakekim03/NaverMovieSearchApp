@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="KGk-i7-Jjw" customClass="MyMovieViewCell" customModule="NaverMovieSearchApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="MyMovieViewCell" customModule="NaverMovieSearchApp" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q8r-XG-2Rt">
+                        <rect key="frame" x="30" y="10" width="383" height="181"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="19u-4W-qMP">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KIq-oF-sMx"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gsl-0Y-RDX">
+                                <rect key="frame" x="120" y="0.0" width="263" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quY-gg-fiX">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ8-fR-32V">
+                                        <rect key="frame" x="0.0" y="60.5" width="263" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsG-cP-fYP">
+                                        <rect key="frame" x="0.0" y="121.5" width="263" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q8r-XG-2Rt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="8zl-DU-GvP"/>
+                    <constraint firstAttribute="trailing" secondItem="Q8r-XG-2Rt" secondAttribute="trailing" constant="100" id="EFO-F7-fVf"/>
+                    <constraint firstAttribute="bottom" secondItem="Q8r-XG-2Rt" secondAttribute="bottom" constant="10" id="GNo-hD-H9s"/>
+                    <constraint firstItem="Q8r-XG-2Rt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uxH-DZ-tbn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="actorNameLabel" destination="AsG-cP-fYP" id="vvb-TV-eqY"/>
+                <outlet property="directorNameLabel" destination="gQ8-fR-32V" id="SXy-P1-1Jv"/>
+                <outlet property="mainImageView" destination="19u-4W-qMP" id="U7i-kB-iSo"/>
+                <outlet property="movieNameLable" destination="quY-gg-fiX" id="7lZ-6P-MqF"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="177.12053571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
